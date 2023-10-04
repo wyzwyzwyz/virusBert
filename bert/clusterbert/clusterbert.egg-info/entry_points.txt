@@ -1,0 +1,4 @@
+[console_scripts]
+bibert = bibert.__main__:train
+bibert-vocab = bibert.dataset.vocab:build
+

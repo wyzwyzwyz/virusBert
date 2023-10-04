@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "prebert",
+            "type": "python",
+            "request": "launch",
+            "module": "bibert",
+            "args":[
+                "-c",
+                "/workspace/datasets/cds/Euk/1015/bs_8sl_512/tra.fna.shf.500.frag.6mer",
+                "-v", 
+                "/workspace/MG-tools/Dbibert/dbibert/BiBERT/data/cds.vocab",
+                "-o", 
+                "/workspace/MG-tools/Dbibert/dbibert/BiBERT/data/", 
+                "-b", 
+                "8", 
+                "-ga",
+                "64",
+                "--corpus_lines_train",
+                "10000",
+                "--logging_path", 
+                "/workspace/datasets/cds/Euk/1015/model_params_bs_8sl_512/bert1026.log",
+                "--long_mask",
+                "-dm", 
+                "--lr", 
+                "5e-4",
+                "-we",
+                "15"
+            ]
+        },
+    ]
+}

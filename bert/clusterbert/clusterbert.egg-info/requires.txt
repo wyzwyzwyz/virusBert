@@ -1,0 +1,6 @@
+tqdm
+numpy
+matplotlib
+seaborn
+scikit-learn
+torch==1.6.0
